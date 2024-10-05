@@ -7,7 +7,7 @@ const Input = forwardRef(({ label, textarea,maxLength, ...props }, ref) => {
       {textarea ? (
         <textarea
           ref={ref}  // Forward the ref to the textarea
-          className="p-3 h-40 rounded-md focus:outline-stone-500 bg-stone-200 border-stone-200"
+          className="p-3 h-40 w-full sm:w-auto rounded-md focus:outline-stone-500 bg-stone-200 border-stone-200"
           {...props}
         />
       ) : (
@@ -15,7 +15,7 @@ const Input = forwardRef(({ label, textarea,maxLength, ...props }, ref) => {
           ref={ref}  // Forward the ref to the input element
           type="text"
           maxLength={maxLength}
-          className="p-3 rounded-md focus:outline-stone-500 bg-stone-200 border-stone-200"
+          className="p-3 w-full sm:w-auto rounded-md focus:outline-stone-500 bg-stone-200 border-stone-200"
           {...props}
         />
       )}

@@ -8,7 +8,7 @@ const Tasks = ({ tasks, handleAddTask, handleDeleteTask }) => {
       <NewTask handleAddTask={handleAddTask} />
 
       {tasks.length === 0 && (
-        <p className="text-stone-400 mb-5">This project has no tasks yet.</p>
+        <p className="text-stone-400 mb-5 text-sm sm:text-base">This project has no tasks yet.</p>
       )}
 
       {tasks.length > 0 && (

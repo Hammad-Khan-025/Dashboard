@@ -13,7 +13,7 @@ const SelectedProject = ({project, handleDeleteProject, handleAddTask, handleDel
       <div className="w-full sm:w-[560px] relative px-4 sm:px-0">
       <div className="">
         <h1 className="font-medium text-xl  text-stone-900 first-letter:capitalize">{project.title}</h1>
-        <h2 className="text-stone-400 font-medium">{formattedDate}</h2>
+        <h2 className="text-stone-400 font-medium text-sm sm:text-base">{formattedDate}</h2>
         <p className="my-5 whitespace-pre-wrap break-all text-sm sm:text-base text-stone-700">{project.description}</p>
         <hr className="border-stone-400 rounded-full" />
       </div>

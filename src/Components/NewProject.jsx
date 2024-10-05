@@ -32,13 +32,13 @@ const NewProject = ({ onAddProject, cancelProject }) => {
 
           <div className="flex justify-end gap-4 py-4 font-semibold tracking-wider">
             <button
-              className="hover:bg-red-600 text-red-600 hover:text-stone-50 active:bg-red-300 py-1 px-3 rounded-md transition-colors duration-300"
+              className="hover:bg-red-600 text-red-600 hover:text-stone-50 active:bg-red-300 text-sm sm:text-base py-1 px-3 rounded-md transition-colors duration-300"
               onClick={cancelProject}
             >
               Cancel
             </button>
             <button
-              className="bg-stone-700 py-1 px-3 text-stone-50 hover:bg-stone-950 active:bg-stone-500 rounded-md transition-colors duration-300"
+              className="bg-stone-700 py-1 px-3 text-sm sm:text-base text-stone-50 hover:bg-stone-950 active:bg-stone-500 rounded-md transition-colors duration-300"
               onClick={handleSave}
             >
               Save
